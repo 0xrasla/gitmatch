@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitMatch
 
-## Getting Started
+## 🚀 Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/gitmatch.git
+cd gitmatch
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +27,79 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- 🔍 Search and view GitHub profiles with detailed statistics
+- 📊 Compare up to 3 profiles side by side
+- 📱 Responsive design that works on desktop and mobile
+- 🌙 Dark mode support
+- 🚀 Fast and efficient with GitHub's REST API
+- 🎨 Modern UI with Tailwind CSS and Radix UI
 
-## Learn More
+### 🔒 Security Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Rate Limiting**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - 30 requests per minute per IP
+  - Prevents API abuse and ensures fair usage
+  - Automatic rate limit detection and user feedback
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Smart Caching**
 
-## Deploy on Vercel
+  - 5-minute cache for profile data
+  - Separate caching for repository stars
+  - Automatic cache cleanup
+  - Improved response times
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Error Handling**
+  - Graceful error messages
+  - Rate limit notifications
+  - API failure handling
+  - Input validation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛣️ Roadmap
+
+### Upcoming Features
+
+- [ ] Repository analytics and insights
+- [ ] Contribution calendar visualization
+- [ ] Language usage statistics
+- [ ] Organization profile support
+- [ ] Export comparison results
+- [ ] Custom comparison metrics
+- [ ] Profile bookmarking
+- [ ] Advanced filtering options
+
+### Performance Improvements
+
+- [x] Implement caching for frequently accessed profiles
+- [ ] Add pagination for large datasets
+- [x] Optimize API calls with request batching
+- [x] Add loading skeletons for better UX
+
+### UI Enhancements
+
+- [ ] Add more chart types for statistics
+- [ ] Implement drag-and-drop profile comparison
+- [ ] Add profile sharing functionality
+- [ ] Improve mobile responsiveness
+- [ ] Add more theme options
+
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with [Next.js](https://nextjs.org)
+- Styled with [Tailwind CSS](https://tailwindcss.com)
+- UI Components from [Radix UI](https://www.radix-ui.com)
+- Icons from [Lucide Icons](https://lucide.dev)
