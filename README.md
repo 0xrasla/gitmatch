@@ -101,5 +101,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Built with [Next.js](https://nextjs.org)
 - Styled with [Tailwind CSS](https://tailwindcss.com)
-- UI Components from [Radix UI](https://www.radix-ui.com)
 - Icons from [Lucide Icons](https://lucide.dev)
